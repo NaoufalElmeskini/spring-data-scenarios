@@ -1,0 +1,112 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.example:tintin-app >-----------------------
+[INFO] Building tintin-app 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ tintin-app ---
+[INFO] Deleting /home/tintin/Bureau/local-projects/software/spring-data-scenarios/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ tintin-app ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ tintin-app ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 11 source files with javac [debug release 21] to target/classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] /home/tintin/Bureau/local-projects/software/spring-data-scenarios/src/main/java/io/tintinapp/learning/basic/domain/infra/entity/Personnage.java: /home/tintin/Bureau/local-projects/software/spring-data-scenarios/src/main/java/io/tintinapp/learning/basic/domain/infra/entity/Personnage.java uses unchecked or unsafe operations.
+[INFO] /home/tintin/Bureau/local-projects/software/spring-data-scenarios/src/main/java/io/tintinapp/learning/basic/domain/infra/entity/Personnage.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ tintin-app ---
+[INFO] skip non existing resourceDirectory /home/tintin/Bureau/local-projects/software/spring-data-scenarios/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ tintin-app ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 4 source files with javac [debug release 21] to target/test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ tintin-app ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.tintinapp.learningdata.connection.PaysServiceTest
+11:31:25.623 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [io.tintinapp.learningdata.connection.PaysServiceTest]: PaysServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:31:25.735 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration io.tintinapp.learningdata.TintinAppApplication for test class io.tintinapp.learningdata.connection.PaysServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2024-10-16T11:31:26.201+02:00  INFO 111391 --- [           main] i.t.learning.connection.PaysServiceTest  : Starting PaysServiceTest using Java 21.0.2 with PID 111391 (started by tintin in /home/tintin/Bureau/local-projects/software/spring-data-scenarios)
+2024-10-16T11:31:26.203+02:00  INFO 111391 --- [           main] i.t.learning.connection.PaysServiceTest  : No active profile set, falling back to 1 default profile: "default"
+2024-10-16T11:31:27.004+02:00  INFO 111391 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16T11:31:27.072+02:00  INFO 111391 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2024-10-16T11:31:27.702+02:00  INFO 111391 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-16T11:31:27.910+02:00  INFO 111391 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16T11:31:27.936+02:00  INFO 111391 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-16T11:31:27.939+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 237 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-10-16T11:31:27.971+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 32 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-10-16T11:31:28.024+02:00  INFO 111391 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16T11:31:28.107+02:00  INFO 111391 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-10-16T11:31:28.149+02:00  INFO 111391 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-16T11:31:28.543+02:00  INFO 111391 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16T11:31:28.574+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 0 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-10-16T11:31:28.631+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 56 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-10-16T11:31:29.839+02:00  INFO 111391 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists accessoire cascade 
+2024-10-16T11:31:29.862+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 0 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+Hibernate: drop table if exists pays cascade 
+Hibernate: drop table if exists personnage cascade 
+2024-10-16T11:31:29.874+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 12 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+Hibernate: create table accessoire (id bigint generated by default as identity, proprio_id bigint, couleur varchar(255), nom varchar(255), primary key (id))
+2024-10-16T11:31:29.878+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 0 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+Hibernate: create table pays (id bigint generated by default as identity, nom varchar(255), primary key (id))
+Hibernate: create table personnage (id bigint generated by default as identity, nom varchar(255), primary key (id))
+Hibernate: alter table if exists accessoire add constraint FK4krpv0ym874argbm1h9k8ffqh foreign key (proprio_id) references personnage
+2024-10-16T11:31:29.907+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 28 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-10-16T11:31:29.909+02:00  INFO 111391 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16T11:31:30.747+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 0 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+2024-10-16T11:31:30.748+02:00  INFO 111391 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-10-16T11:31:30.800+02:00  INFO 111391 --- [           main] i.t.learning.connection.PaysServiceTest  : Started PaysServiceTest in 4.935 seconds (process running for 6.121)
+2024-10-16T11:31:31.346+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 0 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+Hibernate: insert into pays (nom,id) values (?,default)
+Hibernate: insert into pays (nom,id) values (?,default)
+2024-10-16T11:31:31.410+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 64 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+2024-10-16T11:31:31.411+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection acquired in 0 millis, while threshold is set to -1 in dataSource FlexyPoolDataSource
+Hibernate: select p1_0.id,p1_0.nom from pays p1_0
+2024-10-16T11:31:31.495+02:00  INFO 111391 --- [           main] i.t.l.connection.ServiceIntergalactique  : appel vers l'espace...
+2024-10-16T11:31:33.496+02:00  INFO 111391 --- [           main] i.t.l.connection.ServiceIntergalactique  : appel : fin
+2024-10-16T11:31:33.496+02:00  INFO 111391 --- [           main] i.t.learning.connection.PaysService      : [AVyGN, rJeFr]
+2024-10-16T11:31:33.497+02:00  INFO 111391 --- [           main] c.v.flexypool.FlexyPoolDataSource        : Connection leased for 2086 millis, while threshold is set to 0 in dataSource FlexyPoolDataSource
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.150 s -- in io.tintinapp.learningdata.connection.PaysServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.847 s
+[INFO] Finished at: 2024-10-16T11:31:33+02:00
+[INFO] ------------------------------------------------------------------------

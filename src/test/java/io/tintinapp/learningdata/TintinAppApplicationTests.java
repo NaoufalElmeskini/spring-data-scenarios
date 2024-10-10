@@ -1,4 +1,4 @@
-package io.tintinapp.learning;
+package io.tintinapp.learningdata;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

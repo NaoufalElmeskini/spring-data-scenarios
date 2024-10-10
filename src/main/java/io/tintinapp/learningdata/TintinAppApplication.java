@@ -1,4 +1,4 @@
-package io.tintinapp.learning;
+package io.tintinapp.learningdata;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
